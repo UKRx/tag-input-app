@@ -1,0 +1,61 @@
+/* TagInput.css */
+.tag-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: text;
+  overflow: hidden;
+}
+
+.tag-input-container.overflowing {
+  border-color: #ff9800;
+}
+
+.tag-input-container:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.25);
+}
+
+.tags-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.tag-remove-btn {
+  background: none;
+  border: none;
+  color: #666;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 3px;
+}
+
+.tag-remove-btn:hover {
+  color: #ff0000;
+}
+
+.tag-input {
+  flex: 1;
+  min-width: 60px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
